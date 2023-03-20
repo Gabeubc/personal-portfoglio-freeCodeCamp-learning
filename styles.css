@@ -1,0 +1,320 @@
+:root{
+    --hook-color: #f94c43;
+    --text-color-1: black;
+    --text-color-2: white;
+    --background-color-1: white;
+    --background-color-2: black;
+}
+
+@keyframes button-hover {
+    0%{
+    }
+
+    50%{
+    }
+
+    100%{
+    }
+    
+}
+
+@keyframes professions {
+    0% {
+        width: 0;
+        content: "a Msc Software Engineer student.";
+    }
+    8.33% { 
+        width: 100%;
+        content: "a Msc Software Engineer student.";
+    }
+    16.66% {
+        width: 0;
+        content: "a Msc Software Engineer student.";
+    }
+    
+    24.99% {
+        width: 0;
+        content: "a Back-End Developer.";
+    }
+    33.32% { 
+        width: 100%;
+        content: "a Back-End Developer.";
+    }
+    41.65% {
+        width: 0;
+        content: "a Back-End Developer.";
+    }
+    
+    49.98% {
+        width: 0;
+        content: "a Front-End Developer.";
+    }
+    58.31% {
+        width: 100%;
+        content: "a Front-End Developer.";
+    }
+    66.64% {
+        width: 0;
+        content: "a Front-End Developer.";
+    }
+    
+    74.97% {
+        width: 0;
+        content: " your Full Stack Developer.";
+    }
+    83.30% {
+        width: 100%;
+        content: "your Full Stack Developer.";
+    }
+    100% {
+        width: 0;
+        content: "your Full Stack Developer.";
+    }
+}
+
+
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color-1);
+    color: var(--text-color-1);
+}
+
+header{
+    margin: 0px;
+    padding: 15px;
+    padding-left: 0px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    background-color: var(--background-color-1);
+    z-index: 1;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: var(--text-color-1);
+}
+
+#navbar a{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 10px;
+    border: 2px solid var(--text-color-1);
+    box-shadow: 0px 3px 4px var(--hook-color);
+    border-radius: 5px;
+}
+
+#navbar a:hover{
+   transform: scale(1.1);
+   background: linear-gradient(45deg, var(--hook-color), var(--background-color-1));
+   box-shadow: 3px 3px 4px var(--hook-color);
+}
+
+#professions::after {
+    content: "a Msc Software Engineer student.";
+    display: inline-block;
+    animation: professions 20s infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #808080
+}
+
+
+#welcome-section{
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
+#name{
+    color: var(--hook-color)
+}
+
+#experiences{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#experiences h1{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+
+#projects{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+
+.project-tile{
+    border: 2px solid var(--text-color-1);
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 10px 10px var(--hook-color);
+}
+
+.project-tile:hover{
+    transform: scale(1.05);
+    background: linear-gradient(45deg, var(--hook-color), var(--background-color-1));
+}
+
+
+#contact{
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color-1);
+    background: linear-gradient(0deg, var(--hook-color) 5%, var(--background-color-1)100%);
+}
+
+#icons-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
+
+
+ footer i{
+    font-size: x-large;
+    margin: 0 40px;
+    color: var(--text-color-1);
+}
+
+footer i:hover{
+    transform: scale(1.5);
+}
+
+.organization{
+    color: var(--hook-color);
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+.duration{
+    font-style: italic;
+}
+
+
+
+#experiences ul li{
+    list-style: none;
+    padding: 5px;
+    width: 500px;
+    height: 150px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+
+/*
+#experiences ul:hover li:hover .organization{
+    color: var(--text-color-2);
+    font-size: larger;
+    font-weight: bold;
+}
+*/
+
+/*
+#experiences ul:hover li{
+    list-style: none;
+    opacity: 0.5;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 10px 10px var(--hook-color);
+    padding: 20px;
+}
+*/
+
+/*
+#experiences ul:hover li{
+    transform: scale(0.9);
+    opacity: 0.2;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#experiences ul:hover li:hover{
+    box-shadow: -5px 5px 10px var(--text-color-1);
+    background: linear-gradient(45deg, var(--hook-color), var(--background-color-1));
+    opacity: 1;
+    border-radius: 5px;
+    transform: scale(1.02);
+    box-shadow: -5px 5px 10px var(--hook-color);
+    padding-bottom: 10px;
+}*/
+
+#technologies{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+#technologies h1{
+    padding: 10px;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#technologies ul{
+    display: flex;
+    flex-direction: row;
+    width:  50%;
+    justify-content: space-between;
+    list-style: none;
+   /* border: 2px solid black;*/
+    padding: 25px;
+    border-radius: 10px;
+    text-shadow: 0px 2px 3px var(--hook-color);
+}
+
+#technologies ul li i{
+    color: var(--text-color-1);
+    font-size: 60px;
+}
+
