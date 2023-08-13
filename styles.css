@@ -82,7 +82,7 @@ body{
     font-family: 'Montserrat',sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color-1);
+    background-color: var(--background-color-2);
     color: var(--text-color-1);
 }
 
@@ -96,7 +96,7 @@ header{
     flex-direction: row;
     justify-content: flex-end;
     position: fixed;
-    background-color: var(--background-color-1);
+    background-color: var(--background-color-2);
     z-index: 1;
 }
 
@@ -127,7 +127,7 @@ a{
 
 #navbar a:hover{
    transform: scale(1.1);
-   background: linear-gradient(45deg, var(--hook-color), var(--background-color-1));
+   background: linear-gradient(45deg, var(--hook-color), var(--background-color-2));
    box-shadow: 3px 3px 4px var(--hook-color);
 }
 
@@ -192,7 +192,7 @@ a{
 
 .project-tile:hover{
     transform: scale(1.05);
-    background: linear-gradient(45deg, var(--hook-color), var(--background-color-1));
+    background: linear-gradient(45deg, var(--hook-color), var(--background-color-2));
 }
 
 
@@ -205,7 +205,7 @@ a{
     align-items: center;
     gap: 10px;
     color: var(--text-color-1);
-    background: linear-gradient(0deg, var(--hook-color) 5%, var(--background-color-1)100%);
+    background: linear-gradient(0deg, var(--hook-color) 5%, var(--background-color-2) 100%);
 }
 
 #icons-link{
