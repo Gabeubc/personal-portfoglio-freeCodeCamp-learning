@@ -21,41 +21,41 @@
 @keyframes professions {
     0% {
         width: 0;
-        content: "a Msc Software Engineer student.";
+        content: "a Msc Software Engineer student";
     }
     8.33% { 
         width: 100%;
-        content: "a Msc Software Engineer student.";
+        content: "a Msc Software Engineer student";
     }
     16.66% {
         width: 0;
-        content: "a Msc Software Engineer student.";
+        content: "a Msc Software Engineer student";
     }
     
     24.99% {
         width: 0;
-        content: "a Back-End Developer.";
+        content: "a Back-End Developer";
     }
     33.32% { 
         width: 100%;
-        content: "a Back-End Developer.";
+        content: "a Back-End Developer";
     }
     41.65% {
         width: 0;
-        content: "a Back-End Developer.";
+        content: "a Back-End Developer";
     }
     
     49.98% {
         width: 0;
-        content: "a Front-End Developer.";
+        content: "a Front-End Developer";
     }
     58.31% {
         width: 100%;
-        content: "a Front-End Developer.";
+        content: "a Front-End Developer";
     }
     66.64% {
         width: 0;
-        content: "a Front-End Developer.";
+        content: "a Front-End Developer";
     }
     
     74.97% {
@@ -156,6 +156,15 @@ a{
     color: var(--hook-color)
 }
 
+#education{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #experiences{
     width: 100%;
     height: 100%;
@@ -163,6 +172,11 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#education h1{
+    font-size: xx-large;
+    font-weight: bold;
 }
 
 #experiences h1{
