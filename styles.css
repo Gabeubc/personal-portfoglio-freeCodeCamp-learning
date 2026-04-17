@@ -66,28 +66,28 @@
 @keyframes professions {
     0% {
         width: 0;
-        content: "a Msc Software Engineer";
+        content: "a Software Engineer with a Master Degree in CS";
     }
     12.5% { 
         width: 100%;
-        content: "a Msc Software Engineer";
+        content: "a Software Engineer with a Master Degree in CS";
     }
     25% {
         width: 0;
-        content: "a Msc Software Engineer";
+        content: "a Software Engineer with a Master Degree in CS";
     }
 
     37.5% {
         width: 0;
-        content: "studying for AWS certified developer associate";
+        content: "studying for AWS certified solutions architect associate";
     }
     50% {
         width: 100%;
-        content: "studying for AWS certified developer associate";
+        content: "studying for AWS certified solutions architect associate";
     }
     62.5% {
         width: 0;
-        content: "studying for AWS certified developer associate";
+        content: "studying for AWS certified solutions architect associate";
     }
     
     75% {
