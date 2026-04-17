@@ -284,7 +284,7 @@ main {
 #professions::after {
     content: "a Msc Software Engineer student";
     display: inline-block;
-    animation: professions 30s infinite;
+    animation: professions 24s infinite;
     overflow: hidden;
     white-space: nowrap;
     font-weight: 600;
