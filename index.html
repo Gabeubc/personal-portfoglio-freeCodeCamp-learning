@@ -1,131 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8"/>
-        <meta name="veiwport" content="width=device-width, initial-scale=10"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Youbissi Kamdem - Software Engineer & Computer Science Graduate">
+        <meta name="keywords" content="developer, portfolio, computer science, software engineer">
         <script src="https://kit.fontawesome.com/aac42a8cba.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-        <link rel="stylesheet" href="styles.css"/> 
-        <title>Youbissi K.</title> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css"/> 
+        <script src="./carousel.js" defer></script>
+        <title>Youbissi K. - Software Engineer</title> 
     </head>
     <body>
-        <header>
-                <nav id="navbar">
-                    
-                        <a href="#welcome-section">About</a> 
-                        <a href="#projects">Projects</a>
-                        <a href="#education">Education</a>
-                        <a href="#experiences">Experience</a>
-                        <a href="#technologies">Technology</a> 
-                        <a href="#contact">Contact</a>
-                    
-                </nav>
+        <header role="banner">
+            <nav id="navbar" role="navigation" aria-label="Main navigation">
+                <a href="#welcome-section">About</a> 
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#thesis">Thesis</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#experiences">Experience</a>
+                <a href="#technologies">Tech Stack</a> 
+                <a href="#contact">Contact</a>
+            </nav>
         </header>
         <main>
-            <section id="welcome-section">
-                <h1 class="hook">Hey I am <span id="name">Youbissi</span>,</h1>
-                <h1 id="professions"></h1>
+            <section id="welcome-section" role="region" aria-label="Hero section">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hey, I'm <span id="name" class="highlight">Youbissi K. Gabriel</span></h1>
+                    <p id="professions" class="hero-subtitle"></p>
+                    <p class="hero-description">Eternal learner and result oriented engineer</p>
+                </div>
             </section>
             
-            <section id="projects">
-                <!--- projects-->
-                    <a href="https://github.com/Gabeubc/System_Architecture_Labs" target="_blank"> 
-                        <div class="project-tile">
-                            <h1 class="project-title">System Architecture Labs</h1>
-                            <p class="project-description">Labs from my system architecture's course</p>
-                        </div> 
-                    </a>
-                    <a href="https://github.com/Gabeubc/exam-project-cms" target="_blank"> 
-                        <div class="project-tile">
-                            <h1 class="project-title">Web app I exam project</h1>
-                            <p class="project-description">Full stack code of a small content management system</p>
-                        </div> 
-                    </a>
+            <section id="projects" role="region" aria-label="Portfolio projects">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p class="section-subtitle">A selection of my recent work</p>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-tile">
+                        <div class="project-content">
+                            <h3 class="project-title">System Architecture Labs</h3>
+                            <p class="project-description">Exploring fundamental concepts of computer architecture and arm programming.</p>
+                            <a href="https://github.com/Gabeubc/System_Architecture_Labs" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View on GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">Assembly</span>
+                        </div>
+                    </article>
+                    <article class="project-tile">
+                        <div class="project-content">
+                            <h3 class="project-title">System Programming Labs</h3>
+                            <p class="project-description">Exploring fundamental concepts of operating systems and low-level programming.</p>
+                            <a href="https://github.com/Gabeubc/system-programming-labs" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View on GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">Rust</span>
+                        </div>
+                    </article>
+                    <article class="project-tile">
+                        <div class="project-content">
+                            <h3 class="project-title">Formal languages and compilers</h3>
+                            <p class="project-description">Exam prepa - Exploring fundamental concepts of language theory and compiler design.</p>
+                            <a href="https://github.com/Gabeubc/flc_exam" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View on GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">Lex</span>
+                            <span class="tech-badge">Java</span>
+                        </div>
+                    </article>
+                    <article class="project-tile">
+                        <div class="project-content">
+                            <h3 class="project-title">Web application 1 - Content Management System</h3>
+                            <p class="project-description">Exam project - Exploring fundamental concepts of full-stack web application following modern development practices</p>
+                            <a href="https://github.com/Gabeubc/exam-project-cms" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View on GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">REST</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                        </div>
+                    </article>
+                    <article class="project-tile">
+                        <div class="project-content">
+                            <h3 class="project-title">Web application 2 - Car rental service</h3>
+                            <p class="project-description">Exam team project - Exploring advanced concepts of full-stack web application development with a focus on microservices and event-driven architecture.</p>
+                            <a href="https://github.com/polito-WAII-2025/lab5-g19" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View on GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">REST</span>
+                            <span class="tech-badge">Kotlin</span>
+                            <span class="tech-badge">Kafka</span>
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Spring</span>
+                            <span class="tech-badge">Paypal API</span>
+                        </div>
+                    </article>
+                    <article class="project-tile">
+                        <div class="project-content">
+                            <h3 class="project-title">Distributed Systems Programming - Film management service</h3>
+                            <p class="project-description">Exam project - Exploring fundamental concepts of distributed systems and implementation.</p>
+                            <a href="https://github.com/polito-DSP-2024-25/exam-call-1-Gabeubc" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View on GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">Grpc</span>
+                            <span class="tech-badge">Websocket</span>
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Node.js</span>
+                        </div>
+                    </article>
+                    <article class="project-tile">
+                        <div class="project-content">
+                            <h3 class="project-title">Yoka</h3>
+                            <p class="project-description">Side project that aim to allow diaspora to pay directly merchants and services in their home country</p>
+                            <a href="https://github.com/Gabeubc/shop" target="_blank" rel="noopener noreferrer" class="project-link">
+                                View on GitHub <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-badge">Kotlin</span>
+                            <span class="tech-badge">Spring</span>
+                            <span class="tech-badge">Kafka</span>
+                            <span class="tech-badge">Keycloak</span>
+                            <span class="tech-badge">AWS</span>
+                        </div>
+                    </article>
+                </div>
             </section>
 
-            <section id="education">
-                <h1>My study background</h1>
-                <ul>
-                    <li>
-                        <h2 class="experience-title">Bachelor Degree in Computer Science</h2>
-                        <p class="organization">Polytechnic Of Turin</p>
-                        <p class="duration">2018 - 2022</p>
-                        <p></p>
-                    </li>
+            <section id="education" role="region" aria-label="Education background">
+                <div class="section-header">
+                    <h2>Education</h2>
+                    <p class="section-subtitle">My academic journey</p>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="experience-title">Master's Degree in Computer Science</h3>
+                            <p class="organization">Polytechnic of Turin</p>
+                            <time class="duration">October 2022 - March 2026</time>
+                        </div>
+                    </article>
                     
-                    <li>
-                        <h2 class="experience-title">Master Degree in Computer Science</h2>
-                        <p class="organization">Polytechnic Of Turin</p>
-                        <p class="duration">2022 - Present</p>
-                        <p></p>
-                    </li>
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="experience-title">Bachelor's Degree in Computer Science</h3>
+                            <p class="organization">Polytechnic of Turin</p>
+                            <time class="duration">October 2018 - March 2022</time>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
-                </ul>
+            <section id="thesis" role="region" aria-label="Thesis">
+                <div class="section-header">
+                    <h2>Thesis</h2>
+                    <p class="section-subtitle">Research and academic work</p>
+                </div>
+                <div class="thesis-container">
+                    <article class="thesis-card">
+                        <div class="thesis-content">
+                            <h3 class="thesis-title">ML-Driven Log Analysis: A Practical Guide for Proactive Software Reliability Improvement</h3>
+                            <p class="thesis-institution">Polytechnic of Turin - Master Degree</p>
+                            <p class="thesis-year">2026</p>
+                            <p class="thesis-description">
+                                This thesis explores the application of machine learning techniques to log analysis for enhancing software reliability. 
+                                The research demonstrates how ML-driven approaches can enable proactive detection of system anomalies, predict potential failures, 
+                                and provide actionable insights for software maintenance. Through practical implementation and case study, the work showcases 
+                                the effectiveness of these techniques in production environments using tools like Splunk MLTK.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
 
+            <section id="experiences" role="region" aria-label="Work experience">
+                <div class="section-header">
+                    <h2>Experience</h2>
+                    <p class="section-subtitle">My professional journey</p>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="experience-title">Software Engineer | Java Developer | Application Maintenance</h3>
+                            <p class="organization">Intesa Sanpaolo</p>
+                            <time class="duration">June 2024 - In corso</time>
+                            <ul class="experience-details">
+                                <li>Designed, implemented and maintained Java-based REST APIs for robo-advisory and financial product buy/sell workflows</li>
+                                <li>Production monitoring, incident analysis, and bug fixing to ensure system reliability</li>
+                                <li>Proposed and working on the introduction of ML-driven log analysis for proactive software reliability improvement (Splunk MLTK)</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="experience-title">Java Developer | Application Maintenance</h3>
+                            <p class="organization">GFT Technologies - NEXI</p>
+                            <time class="duration">September 2023 - May 2024</time>
+                            <ul class="experience-details">
+                                <li>Implemented and maintained Java-based REST APIs for cards, transactions, merchants, and acquirers management</li>
+                                <li>Introduced sequence diagrams into technical documentation to improve system understanding and collaboration</li>
+                                <li>Production monitoring, incident analysis, and bug fixing to ensure system reliability</li>
+                            </ul>
+                        </div>
+                    </article>
+                    
+                    <article class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="experience-title">MuleSoft Developer | Application Maintenance</h3>
+                            <p class="organization">Accenture Italia - Farfetch</p>
+                            <time class="duration">March 2022 - July 2023</time>
+                            <ul class="experience-details">
+                                <li>Designed and implemented integration flows using MuleSoft and API-led connectivity patterns</li>
+                                <li>For a batch process that need to process logs, I identified platform limitations caused by the miss of while loop then proposed and implemented an asynchronous, event-driven architecture using ActiveMQ, improving scalability and robustness</li>
+                                <li>Onboard one developer into software maintenance</li>
+                                <li>Managed APIs, message queues, dependencies (Maven), and production troubleshooting</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </section> 
 
-            <section id="experiences">
-                <h1>What I have been through...</h1>
-                <ul>
-                    
-                    <li>
-                        <h2 class="experience-title">MuleSoft Developer</h2>
-                        <p class="organization">Accenture - Farfetch</p>
-                        <p class="duration">03/2022 - 08/2023</p>
-                        <p></p>
-                    </li>
-                    <li>
-                        <h2 class="experience-title">Back Developer Developer</h2>
-                        <p class="organization">GFT - NEXI</p>
-                        <p class="duration">09/2023 - Present</p>
-                        <p></p>
-                    </li>
+            <section id="certifications" role="region" aria-label="Certifications">
+                <div class="section-header">
+                    <h2>Certifications</h2>
+                    <p class="section-subtitle">Verified credentials and exams</p>
+                </div>
+                <div class="cert-flex">
+                    <!--
+                    <article class="cert-card">
+                        <a class="cert-body" href="https://www.credly.com/badges/6f6f3f4e-3d3b-4d2e- ninth-8f5e-2c4f6e6e6e6e/public_url" target="_blank" rel="noopener noreferrer">
+                            <h3 class="cert-title">AWS Certified Cloud Practitioner</h3>
+                            <p class="cert-issuer">Amazon Web Services</p>
+                            <time class="cert-date">Issued Jan 2025</time>
+                        </a>
+                    </article>
 
-                </ul>
+                    <article class="cert-card">
+                        <a class="cert-body" href="https://www.credly.com/badges/6f6f3f4e-3d3b-4d2e- ninth-8f5e-2c4f6e6e6e6e/public_url" target="_blank" rel="noopener noreferrer">
+                            <h3 class="cert-title">AWS Certified Developer Associate</h3>
+                            <p class="cert-issuer">Amazon Web Services</p>
+                            <time class="cert-date">Issued Jan 2025</time>
+                        </a>
+                    </article>
+                    -->
 
-            </section> 
+                    <article class="cert-card">
+                        <a class="cert-body" href="https://www.freecodecamp.org/certification/fcc222f6c21-1b45-455b-98e2-62876c71dc5a/data-analysis-with-python-v7" target="_blank" rel="noopener noreferrer">
+                            <h3 class="cert-title">Data Analysis with Python</h3>
+                            <p class="cert-issuer">freeCodeCamp</p>
+                            <time class="cert-date">Issued Sep 2025</time>
+                        </a>
+                    </article>
 
-            
-            <section id="technologies">
-                <h1>Some technologies i've used</h1>
-                <ul>
-                    <li>
-                        <i class="fa-brands fa-html5"></i>
-                    </li>
-                    
-                    <li>
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </li>
-                    
-                    <li>
-                        <i class="fa-brands fa-js"></i>
-                    </li>
+                    <article class="cert-card">
+                        <a class="cert-body" href="https://www.freecodecamp.org/certification/fcc222f6c21-1b45-455b-98e2-62876c71dc5a/scientific-computing-with-python-v7" target="_blank" rel="noopener noreferrer">
+                            <h3 class="cert-title">Scientific Computing with Python</h3>
+                            <p class="cert-issuer">freeCodeCamp</p>
+                            <time class="cert-date">Issued Aug 2025</time>
+                        </a>
+                    </article>
 
-                    <li>
-                        <i class="fa-brands fa-react"></i>
-                    </li>
+                    <article class="cert-card">
+                        <a class="cert-body" href="https://www.freecodecamp.org/certification/fcc222f6c21-1b45-455b-98e2-62876c71dc5a/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">
+                            <h3 class="cert-title">JavaScript Algorithms and Data Structures</h3>
+                            <p class="cert-issuer">freeCodeCamp</p>
+                            <time class="cert-date">Issued Jul 2023</time>
+                        </a>
+                    </article>
 
-                    <li>
+                    <article class="cert-card">
+                        <a class="cert-body" href="https://www.freecodecamp.org/certification/fcc222f6c21-1b45-455b-98e2-62876c71dc5a/responsive-web-design" target="_blank" rel="noopener noreferrer">
+                            <h3 class="cert-title">Responsive Web Design</h3>
+                            <p class="cert-issuer">freeCodeCamp</p>
+                            <time class="cert-date">Issued Mar 2023</time>
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <section id="technologies" role="region" aria-label="Technical skills">
+                <div class="section-header">
+                    <h2>Tech Stack</h2>
+                    <p class="section-subtitle">Technologies I work with</p>
+                </div>
+                <ul class="tech-grid">
+
+                    <li class="tech-item" title="Java">
                         <i class="fa-brands fa-java"></i>
+                        <span>Java</span>
                     </li>
 
-                    <li>
+                    <li class="tech-item" title="Kotlin">
+                        <span>Kotlin</span>
+                    </li>
+
+                    <li class="tech-item" title="Rust">
                         <i class="fa-brands fa-rust"></i>
+                        <span>Rust</span>
+                    </li>
+
+                    <li class="tech-item" title="Python">
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                    </li>
+
+                    <li class="tech-item" title="Spring Boot">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Spring Boot</span>
+                    </li>
+
+                    <!--
+                    <li class="tech-item" title="AWS">
+                        <i class="fa-brands fa-aws"></i>
+                        <span>AWS</span>
+                    </li>
+                    -->
+                    
+                    <li class="tech-item" title="JavaScript">
+                        <i class="fa-brands fa-js"></i>
+                        <span>JavaScript</span>
+                    </li>
+
+                    <li class="tech-item" title="React">
+                        <i class="fa-brands fa-react"></i>
+                        <span>React</span>
+                    </li>
+
+                    <li class="tech-item" title="HTML5">
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML5</span>
+                    </li>
+                    
+                    <li class="tech-item" title="CSS3">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>CSS3</span>
                     </li>
 
                 </ul>
-
             </section> 
         </main>
-        <footer>
-            <section id="contact">
-                <h1 class="hook">Let's work together...</h1>
-                <div id="icons-link">
-                    <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="" target="_blank" id="profile-link"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <footer role="contentinfo">
+            <section id="contact" role="region" aria-label="Contact section">
+                <div class="contact-content">
+                    <h2 class="contact-title">Let's Work Together</h2>
+                    <p class="contact-subtitle">I'd love to hear from you. Get in touch!</p>
+                    <ul id="social-links" role="list">
+                        <li>
+                            <a href="https://github.com/Gabeubc" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/gabriel-youbissi-kamdem-582959185/" target="_blank" rel="noopener noreferrer" id="profile-link" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <p>Copyright Youbissi Kamdem G.</p>
+                <p class="copyright">&copy; 2026 Youbissi Kamdem G. All rights reserved.</p>
             </section>
         </footer>
     </body>
