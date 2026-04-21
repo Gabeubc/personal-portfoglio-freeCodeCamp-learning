@@ -66,15 +66,15 @@
 @keyframes professions {
     0% {
         width: 0;
-        content: "a Software Engineer with a Master Degree in CS";
+        content: "a Software Engineer with a Master Degree in CE";
     }
     12.5% { 
         width: 100%;
-        content: "a Software Engineer with a Master Degree in CS";
+        content: "a Software Engineer with a Master Degree in CE";
     }
     25% {
         width: 0;
-        content: "a Software Engineer with a Master Degree in CS";
+        content: "a Software Engineer with a Master Degree in CE";
     }
 
     37.5% {
