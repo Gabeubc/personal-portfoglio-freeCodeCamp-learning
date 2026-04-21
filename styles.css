@@ -1069,7 +1069,7 @@ footer::after {
     }
 
     #professions::after {
-        content: "Software Engineer with a Master Degree in CS";
+        content: "Software Engineer with a Master Degree in CE";
         animation: none;
         white-space: normal;
         overflow: visible;
